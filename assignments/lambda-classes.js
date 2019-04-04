@@ -31,9 +31,9 @@ class Instructor extends Person{
     }
 
     test(student){
-        let random = Math.floor(Math.random() * 100) - 50;
-        let newscore = student.score + random;
-        return `${this.name} grades ${student.name}'s project, ${newscore} is his new grade.`
+        let random = Math.floor(Math.random() * 100)  -70;
+        student.score = student.score + random;
+        return `${this.name} grades ${student.name}'s project, ${student.score} is his new grade.`
     }
 
 }//Instructor
